@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<form action="" onsubmit="send()">
+		<div class="box">
+			<label for="name">ФИО</label>
+			<input id="name" type="text" placeholder="имя">
+			<div class="box__err">
+				<p></p>
+			</div>
+		</div>
+		<div class="box">
+			<label for="date">Дата рождения</label>
+			<input class="required" id="date" type="date">
+			<div class="box__err">
+				<p class="err-p" data-id="date">обязательное поле ввода</p>
+			</div>
+		</div>
+		<div class="box">
+			<label for="place">Место рождения</label>
+			<input class="required" id="place" type="text" placeholder="место рождения">
+			<div class="box__err">
+				<p class="err-p" data-id="place">обязательное поле ввода</p>
+			</div>
+		</div>
+		<div class="box">
+			<label for="pasportSer">Серия и номер паспорта</label>
+			<input class="required" id="pasportSer" type="text" placeholder="номер паспорта">
+			<div class="box__err">
+				<p class="err-p" data-id="pasportSer">обязательное поле ввода</p>
+			</div>
+		</div>
+		<button>зарегистрироваться</button>
+	</form>
+	<script src="js.js" type="text/javascript"></script>
+</body>
+
+</html>
